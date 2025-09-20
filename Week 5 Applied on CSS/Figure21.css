@@ -1,0 +1,22 @@
+.red_text{
+    color:red
+}
+
+.green_text{
+    color:green
+}
+
+.bigger_text{
+    font: 20px "Times New Roman"
+}
+
+.bold_text{
+    font: bold 16px "Times New Roman" 
+}
+
+.italic_text{
+    font: italic 16px "Times New Roman"
+}
+.bold_and_italic_text{
+    font: bold italic 16px "Times New Roman"
+}
