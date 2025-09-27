@@ -39,7 +39,7 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "../Data/Obesity_data.csv"
+          "url": "https://raw.githubusercontent.com/yz-2507/3179/refs/heads/main/Week%209%20Homework%20(Map)/Data/Obesity_data.csv"
         },
         "key": "Country",
         "fields": ["Obesity (%)"]
