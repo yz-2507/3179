@@ -4,7 +4,7 @@
      "height"  :   400  , 
      "title"  :   "Female BMI and Obesity Rate"  , 
      "data"  : { 
-       "url"  :   "../data/Female_BMI_Obesity.csv" }, 
+       "url"  :   "https://raw.githubusercontent.com/yz-2507/3179/refs/heads/main/DV_2_draft/data/Female_BMI_Obesity.csv" }, 
     "params" : [ { 
      "name"  :   "Population_Above"  , 
      "value"  :   0  , 
