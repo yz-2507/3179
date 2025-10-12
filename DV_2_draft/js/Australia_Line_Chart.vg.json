@@ -1,0 +1,11 @@
+{
+"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+"title":"Obesity rate in Australia from 1975 to 2016",
+"data":{"url":"../data/Australia_obesity_data.csv"},
+"mark":{"type":"line","tooltip": true},
+"encoding":{
+    "x":{"field":"Year","type":"quantitative","axis":{"format":".0f"}},
+    "y":{"field":"Obesity (%)","type":"quantitative"},
+    "color":{"field":"Sex","type":"nominal"}
+},
+"padding":{ "left": 100}}
