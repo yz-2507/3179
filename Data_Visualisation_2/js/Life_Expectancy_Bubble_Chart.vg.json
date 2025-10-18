@@ -4,7 +4,7 @@
      "height"  :   400  , 
      "title"  :   "Obesity Rate and Life Expectancy in 2015"  , 
      "data"  : { 
-       "url"  :   "../data/Life_Expectancy_final_bubble_chart_data.csv" }, 
+       "url"  :   "https://raw.githubusercontent.com/yz-2507/3179/refs/heads/main/Data_Visualisation_2/data/Life_Expectancy_final_bubble_chart_data.csv" }, 
     "params" : [ { 
      "name"  :   "Population_Above"  , 
      "value"  :   0  , 
