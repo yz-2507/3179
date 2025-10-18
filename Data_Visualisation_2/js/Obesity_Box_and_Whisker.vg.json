@@ -1,0 +1,15 @@
+{
+"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+"width"  :   310,
+"height"  :   300, 
+"title":"Obesity rate in different continents",
+"data": {
+    "url": "https://raw.githubusercontent.com/yz-2507/3179/refs/heads/main/DV_2_draft/data/Final_box_and_whisker_data.csv"},
+"mark":"boxplot",
+"encoding":{
+    "x":{"field":"Continent","type":"nominal"},
+    "color":{"field":"Continent","type":"nominal","legend":null},
+    "y":{"field":"Obesity (%)","type":"quantitative","scale":{"zero":false}}
+},
+"padding":{"left":110}
+}

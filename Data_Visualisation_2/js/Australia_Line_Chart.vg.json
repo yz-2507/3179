@@ -1,0 +1,23 @@
+{
+"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+"width"  :   320,
+"height"  :   300  , 
+"title":"Obesity rate in Australia from 1975 to 2016",
+"data":{"url":"https://raw.githubusercontent.com/yz-2507/3179/refs/heads/main/DV_2_draft/data/Australia_obesity_data.csv"},
+"params":[
+    {"name": "Gender_selection",
+"bind":{
+    "input":"select",
+    "options":[null,"Both sexes","Male","Female"],
+    "labels":["Show All","Both sexes","Male","Female"],
+    "name": "Gender selection: "
+
+}}],
+"transform":[{"filter": "Gender_selection == null || datum.Sex == Gender_selection"}],
+"mark":{"type":"line","tooltip": true},
+"encoding":{
+    "x":{"field":"Year","type":"quantitative","axis":{"format":".0f"}},
+    "y":{"field":"Obesity (%)","type":"quantitative"},
+    "color":{"field":"Sex","type":"nominal"}
+},
+"padding":{ "left": 100}}

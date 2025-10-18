@@ -1,0 +1,127 @@
+,Country,Year,Obesity (%),Sex
+1008,Australia,1975,10.5 ,Both sexes
+1009,Australia,1975,9.7 ,Male
+1010,Australia,1975,11.2 ,Female
+1011,Australia,1976,10.8 ,Both sexes
+1012,Australia,1976,10.0 ,Male
+1013,Australia,1976,11.5 ,Female
+1014,Australia,1977,11.0 ,Both sexes
+1015,Australia,1977,10.3 ,Male
+1016,Australia,1977,11.7 ,Female
+1017,Australia,1978,11.3 ,Both sexes
+1018,Australia,1978,10.6 ,Male
+1019,Australia,1978,12.0 ,Female
+1020,Australia,1979,11.6 ,Both sexes
+1021,Australia,1979,10.8 ,Male
+1022,Australia,1979,12.3 ,Female
+1023,Australia,1980,11.9 ,Both sexes
+1024,Australia,1980,11.2 ,Male
+1025,Australia,1980,12.6 ,Female
+1026,Australia,1981,12.2 ,Both sexes
+1027,Australia,1981,11.5 ,Male
+1028,Australia,1981,12.8 ,Female
+1029,Australia,1982,12.5 ,Both sexes
+1030,Australia,1982,11.8 ,Male
+1031,Australia,1982,13.1 ,Female
+1032,Australia,1983,12.8 ,Both sexes
+1033,Australia,1983,12.1 ,Male
+1034,Australia,1983,13.4 ,Female
+1035,Australia,1984,13.1 ,Both sexes
+1036,Australia,1984,12.4 ,Male
+1037,Australia,1984,13.7 ,Female
+1038,Australia,1985,13.5 ,Both sexes
+1039,Australia,1985,12.8 ,Male
+1040,Australia,1985,14.1 ,Female
+1041,Australia,1986,13.8 ,Both sexes
+1042,Australia,1986,13.2 ,Male
+1043,Australia,1986,14.4 ,Female
+1044,Australia,1987,14.2 ,Both sexes
+1045,Australia,1987,13.5 ,Male
+1046,Australia,1987,14.7 ,Female
+1047,Australia,1988,14.5 ,Both sexes
+1048,Australia,1988,13.9 ,Male
+1049,Australia,1988,15.1 ,Female
+1050,Australia,1989,14.9 ,Both sexes
+1051,Australia,1989,14.3 ,Male
+1052,Australia,1989,15.5 ,Female
+1053,Australia,1990,15.3 ,Both sexes
+1054,Australia,1990,14.7 ,Male
+1055,Australia,1990,15.8 ,Female
+1056,Australia,1991,15.7 ,Both sexes
+1057,Australia,1991,15.2 ,Male
+1058,Australia,1991,16.2 ,Female
+1059,Australia,1992,16.2 ,Both sexes
+1060,Australia,1992,15.6 ,Male
+1061,Australia,1992,16.7 ,Female
+1062,Australia,1993,16.6 ,Both sexes
+1063,Australia,1993,16.1 ,Male
+1064,Australia,1993,17.1 ,Female
+1065,Australia,1994,17.1 ,Both sexes
+1066,Australia,1994,16.6 ,Male
+1067,Australia,1994,17.5 ,Female
+1068,Australia,1995,17.6 ,Both sexes
+1069,Australia,1995,17.1 ,Male
+1070,Australia,1995,18.0 ,Female
+1071,Australia,1996,18.1 ,Both sexes
+1072,Australia,1996,17.7 ,Male
+1073,Australia,1996,18.5 ,Female
+1074,Australia,1997,18.6 ,Both sexes
+1075,Australia,1997,18.2 ,Male
+1076,Australia,1997,18.9 ,Female
+1077,Australia,1998,19.1 ,Both sexes
+1078,Australia,1998,18.8 ,Male
+1079,Australia,1998,19.4 ,Female
+1080,Australia,1999,19.7 ,Both sexes
+1081,Australia,1999,19.3 ,Male
+1082,Australia,1999,19.9 ,Female
+1083,Australia,2000,20.2 ,Both sexes
+1084,Australia,2000,19.9 ,Male
+1085,Australia,2000,20.5 ,Female
+1086,Australia,2001,20.7 ,Both sexes
+1087,Australia,2001,20.5 ,Male
+1088,Australia,2001,21.0 ,Female
+1089,Australia,2002,21.3 ,Both sexes
+1090,Australia,2002,21.1 ,Male
+1091,Australia,2002,21.5 ,Female
+1092,Australia,2003,21.8 ,Both sexes
+1093,Australia,2003,21.7 ,Male
+1094,Australia,2003,22.0 ,Female
+1095,Australia,2004,22.4 ,Both sexes
+1096,Australia,2004,22.3 ,Male
+1097,Australia,2004,22.5 ,Female
+1098,Australia,2005,22.9 ,Both sexes
+1099,Australia,2005,22.9 ,Male
+1100,Australia,2005,23.0 ,Female
+1101,Australia,2006,23.5 ,Both sexes
+1102,Australia,2006,23.5 ,Male
+1103,Australia,2006,23.5 ,Female
+1104,Australia,2007,24.0 ,Both sexes
+1105,Australia,2007,24.0 ,Male
+1106,Australia,2007,24.0 ,Female
+1107,Australia,2008,24.6 ,Both sexes
+1108,Australia,2008,24.6 ,Male
+1109,Australia,2008,24.5 ,Female
+1110,Australia,2009,25.1 ,Both sexes
+1111,Australia,2009,25.2 ,Male
+1112,Australia,2009,24.9 ,Female
+1113,Australia,2010,25.6 ,Both sexes
+1114,Australia,2010,25.8 ,Male
+1115,Australia,2010,25.4 ,Female
+1116,Australia,2011,26.2 ,Both sexes
+1117,Australia,2011,26.4 ,Male
+1118,Australia,2011,25.9 ,Female
+1119,Australia,2012,26.7 ,Both sexes
+1120,Australia,2012,27.0 ,Male
+1121,Australia,2012,26.4 ,Female
+1122,Australia,2013,27.3 ,Both sexes
+1123,Australia,2013,27.7 ,Male
+1124,Australia,2013,26.9 ,Female
+1125,Australia,2014,27.9 ,Both sexes
+1126,Australia,2014,28.3 ,Male
+1127,Australia,2014,27.4 ,Female
+1128,Australia,2015,28.4 ,Both sexes
+1129,Australia,2015,28.9 ,Male
+1130,Australia,2015,27.9 ,Female
+1131,Australia,2016,29.0 ,Both sexes
+1132,Australia,2016,29.6 ,Male
+1133,Australia,2016,28.4 ,Female

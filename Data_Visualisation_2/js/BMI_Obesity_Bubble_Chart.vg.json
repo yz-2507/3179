@@ -1,0 +1,119 @@
+ {"$schema"  :   "https://vega.github.io/schema/vega-lite/v5.json" ,
+ "params":[
+  {
+    "name":"Gender",
+    "value":"Male ",
+    "bind":{"input":"radio","options":["Male ","Female"]}
+  }], 
+  "layer": [{ 
+     
+     "width"  :   350  , 
+     "height"  :   375  , 
+     "title"  :   "BMI and Obesity Rate"  , 
+     "data"  : { 
+       "url"  :   "https://raw.githubusercontent.com/yz-2507/3179/refs/heads/main/DV_2_draft/data/Male_BMI_Obesity.csv" }, 
+     
+     "encoding"  : { 
+       "x"  : { 
+         "field"  :   "Mean BMI"  , 
+         "type"  :   "quantitative" 
+     }, 
+       "y"  : { 
+         "field"  :   "Obesity (%)"  , 
+         "type"  :   "quantitative" 
+     }, 
+       "color"  : { 
+         "field"  :   "Continent"  , 
+         "type"  :   "nominal"
+         },
+        "opacity":{
+          "condition":{"test":"Gender=='Female'","value":0},
+          "value":1
+        }},
+"padding":{ "right": 15}, 
+"layer":[
+    {
+"mark"  :   "circle"  , 
+"encoding":{    
+"size" : { 
+"field" :  "Population" , 
+"type" :  "quantitative" , 
+"scale" : { 
+"type" :  "threshold" , 
+"domain" : [ 1000000 ,  10000000 ,  50000000 ,  100000000 ,  500000000 ], 
+"range" : [ 10 ,  50 ,  150 ,  200 ,  300 ,  400 ] 
+},
+"legend" : { "format" :  ".1s" }},
+"opacity":{
+          "condition":{"test":"Gender=='Female'","value":0},
+          "value":1
+        },
+"tooltip" : [ 
+{ "field" :  "Country" ,  "type" :  "nominal" }, 
+{ "field" :  "Mean BMI" ,  "type" :  "quantitative"}, 
+{ "field" :  "Obesity (%)" ,  "type" :  "quantitative"}] }
+
+}
+],
+"autosize": {
+   "type": "fit",
+   "contains": "padding",
+    "resize": true
+  } 
+},
+ { 
+     
+     "width"  :   350  , 
+     "height"  :   375  , 
+     "title"  :   "BMI and Obesity Rate"  , 
+     "data"  : { 
+       "url"  :   "https://raw.githubusercontent.com/yz-2507/3179/refs/heads/main/DV_2_draft/data/Female_BMI_Obesity.csv" },  
+     
+     "encoding"  : { 
+       "x"  : { 
+         "field"  :   "Mean BMI"  , 
+         "type"  :   "quantitative" 
+     }, 
+       "y"  : { 
+         "field"  :   "Obesity (%)"  , 
+         "type"  :   "quantitative" 
+     }, 
+       "color"  : { 
+         "field"  :   "Continent"  , 
+         "type"  :   "nominal"
+         },"opacity":{
+          "condition":{"test":"Gender=='Male '","value":0},
+          "value":1
+        }},
+"padding":{ "right": 15}, 
+"layer":[
+    {
+"mark"  :   "circle"  , 
+"encoding":{    
+"size" : { 
+"field" :  "Population" , 
+"type" :  "quantitative" , 
+"scale" : { 
+"type" :  "threshold" , 
+"domain" : [ 1000000 ,  10000000 ,  50000000 ,  100000000 ,  500000000 ], 
+"range" : [ 10 ,  50 ,  150 ,  200 ,  300 ,  400 ] 
+}, 
+"legend" : { "format" :  ".1s" }},
+"opacity":{
+          "condition":{"test":"Gender=='Male '","value":0},
+          "value":1
+        },
+"tooltip" : [ 
+{ "field" :  "Country" ,  "type" :  "nominal" }, 
+{ "field" :  "Mean BMI" ,  "type" :  "quantitative"}, 
+{ "field" :  "Obesity (%)" ,  "type" :  "quantitative"}] }
+
+}
+],
+"autosize": {
+    "type": "fit",
+    "contains": "padding",
+    "resize": true
+  } 
+}]
+ }

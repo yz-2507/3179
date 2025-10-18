@@ -1,0 +1,84 @@
+ { 
+     "$schema"  :   "https://vega.github.io/schema/vega-lite/v5.json"  , 
+     "width"  :   500  , 
+     "height"  :   400  , 
+     "title"  :   "Obesity Rate and Life Expectancy in 2015"  , 
+     "data"  : { 
+       "url"  :   "../data/Life_Expectancy_final_bubble_chart_data.csv" }, 
+    "params" : [ { 
+     "name"  :   "Population_Above"  , 
+     "value"  :   0  , 
+     "bind"  : { 
+       "input"  :   "range"  , 
+       "min"  :   0  , 
+       "max"  :   100000000  , 
+       "step"  :   1000000  , 
+       "name"  :   "Minimum Population: " 
+   }}],
+    "transform"  : [ {  "filter"  :   "datum.Population > Population_Above"  }], 
+     
+     "encoding"  : { 
+       "x"  : { 
+         "field"  :   "Obesity (%)"  , 
+         "type"  :   "quantitative" 
+     }, 
+       "y"  : { 
+         "field"  :   "Life Expectancy"  , 
+         "type"  :   "quantitative" 
+     }, 
+       "color"  : { 
+         "field"  :   "Continent"  , 
+         "type"  :   "nominal"
+         }},
+"padding":{ "right": 15}, 
+"layer":[
+    {
+"mark"  :   "circle"  , 
+"encoding":{    
+"size" : { 
+"field" :  "Population" , 
+"type" :  "quantitative" , 
+"scale" : { 
+"type" :  "threshold" , 
+"domain" : [ 1000000 ,  10000000 ,  50000000 ,  100000000 ,  500000000 ], 
+"range" : [ 10 ,  50 ,  150 ,  200 ,  300 ,  400 ] 
+},
+"legend" : { "format" :  ".1s" }} 
+},
+"tooltip" : [ 
+{ "field" :  "Country" ,  "type" :  "nominal" }, 
+{ "field" :  "Obesity (%)" ,  "type" :  "quantitative"}, 
+{ "field" :  "Life Expectancy" ,  "type" :  "quantitative"}] 
+},{
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": -12,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": {"field": "Country", "type": "nominal"},
+        "color": {"value": "black"},
+        "opacity": {
+          "condition": {
+            "test": "datum['Country'] == 'China' || datum['Country'] == 'Australia' || datum['Country'] == 'Italy' ||  datum['Country'] == 'Japan'",
+            "value": 1
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "Country", "type": "nominal"},
+          {"field": "Obesity (%)", "type": "quantitative"},
+          {"field": "Life Expectancy", "type": "quantitative"}
+        ]
+      }
+    }
+],
+"autosize": {
+   "type": "fit",
+   "contains": "padding",
+    "resize": true
+  } 
+}

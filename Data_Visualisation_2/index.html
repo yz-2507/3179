@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Obesity</title>
+    <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+  </head>
+
+  <body>
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h1>Obesity</h1>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <div class="page">
+        <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div id="vis1" class="vis-container"></div>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+    
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div class="description description-left">
+            <h2>Overview</h2>
+          <p>Obesity or being overweight is synonymous with having excessive body fat. It can be the root
+            cause of various health problems. Obesity is defined as having a body mass index (BMI) over 30.
+        The above choropleth map presents an overview of obesity across the globe. The box and whisker plot
+    on the right gives a statistical summary of obesity rate in different continents.</p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="vis2" class="vis-container"></div>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h2 class="subtitles">Obesity rate in Australia</h2>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div class="description description-left">
+          <p>The line chart on the right shows how obesity rate changed from 1975 to 2016. In Australia,
+            approximately 2 out of 3 adults are either obese or overweight. It is more prevalent amongst
+            disadvantaged population. 
+          </p>
+          <p>Use the drop-down menu to see each line separately.</p>
+        </div>
+      </div>
+      <div class="pure-u-1-2">
+        <div id="vis3" class="vis-container"></div>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h2 class="subtitles">BMI and obesity rate</h2>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <p>The bubble charts show the correlation between the mean BMI and obesity rate across different countries in 2016.
+          Generally, countries with higher mean BMI would have higher obesity rate. For both male and female, the countries
+          with the highest mean BMI and obesity rate are from Oceania. This is also evident in the above box and whisker plot.
+          
+        <p>Click the buttons to switch between bubble charts on male and female.</p> 
+        </p>
+        </div>
+
+      <div class="pure-u-1-2">
+        <div id ="vis7" class ="vis-container"></div>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h2 class="subtitles">Obesity and life expectancy</h2>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <p>This bubble chart compares obesity rate with life expectancy. Generally, higher obesity rate is
+          associated with lower life expectancy. However, on a population scale, the correlation is not as strong, with
+          some countries having lower obesity rate but also lower life expectancy and vice versa. This shows that whilst
+          having higher obesity rate can reduce life expectancy, but there are many other factors which may affect life expectancy on
+          a population scale.</p>
+
+        <p>Use the slider to filter by minimum population.</p>
+        </div>
+
+      <div class="pure-u-1-2">
+        <div id="vis6" class="vis-container"></div>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <p class="metadata">Designed and created by Yitong Zheng</p>
+        <p class="metadata">Published date: 19/10/2025</p>
+        <p class="metadata">Data source:</p>
+        <p class="metadata">https://www.kaggle.com/datasets/amanarora/obesity-among-adults-by-country-19752016</p>
+        <p class="metadata">https://ourworldindata.org/obesity</p>
+        <p class="metadata">https://www.kaggle.com/datasets/vrec99/life-expectancy-2000-2015</p>
+        <p class="metadata">https://data.worldbank.org/indicator/SP.POP.TOTL</p>
+        <p class="metadata">https://www.kaggle.com/datasets/hserdaraltan/countries-by-continent</p>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+
+
+
+
+</div><!-- end page -->
+
+<script type="text/javascript">
+    var specVis1 = "js/obesity_choropleth.vg.json";
+    var specVis2 = "js/Obesity_Box_and_Whisker.vg.json";
+    var specVis3 = "js/Australia_Line_Chart.vg.json";
+    var specVis6 = "js/Life_Expectancy_Bubble_Chart.vg.json";
+    var specVis7 = "js/BMI_Obesity_Bubble_Chart.vg.json";
+
+    vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis6', specVis6, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis7', specVis7, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+</script>
+  </body>
